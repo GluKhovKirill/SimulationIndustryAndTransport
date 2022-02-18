@@ -26,7 +26,7 @@ class Pack:
             raise TypeError("tightness must be boolean")
         if not (isinstance(pack_volume, int) or isinstance(pack_volume, float)):
             raise TypeError("volume must be float or int")
-        if not isinstance(pack_expiration_date, datetime.timedelta):
+        if  not isinstance(pack_expiration_date, datetime.timedelta):
             raise TypeError("pack_expiration_date must be datetime.timedelta")
 
     def __str__(self):
